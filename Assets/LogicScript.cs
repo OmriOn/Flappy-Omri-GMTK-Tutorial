@@ -27,4 +27,11 @@ public class LogicScript : MonoBehaviour
         gameOverScreen.SetActive(true); 
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) == true)
+        {
+            Application.Quit();
+        }
+    }
 }
